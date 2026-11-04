@@ -69,7 +69,7 @@ export function HomePage() {
         <div className="hero__glow hero__glow--two" aria-hidden="true" />
         <div className="container hero__inner">
           <div className="hero__copy">
-            <span className="eyebrow">
+            <span className="eyebrow eyebrow--light">
               <PartyPopper size={16} aria-hidden="true" /> O julgamento mais carinhoso da internet
             </span>
             <h1>
