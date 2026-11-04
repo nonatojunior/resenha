@@ -22,5 +22,11 @@ export default defineConfig(({ command }) => ({
     setupFiles: ['./tests/setup.ts'],
     css: false,
     restoreMocks: true,
+    // Os testes exercitam o repositório de demonstração. Sem isso, o Vitest herda as
+    // variáveis VITE_SUPABASE_* do ambiente/CI e as páginas passam a chamar a rede.
+    env: {
+      VITE_SUPABASE_URL: '',
+      VITE_SUPABASE_ANON_KEY: '',
+    },
   },
 }));
